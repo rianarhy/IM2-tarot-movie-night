@@ -1,0 +1,19 @@
+{
+  "movies": [
+    {
+      "name": "Eight of Wands",
+      "#IMDB_ID": "tt0947798"
+    },
+    {
+      "name": "Five of Wands",
+      "name_short": "wa05",
+      "value": "five",
+      "value_int": 5,
+      "suit": "wands",
+      "type": "minor",
+      "meaning_up": "Imitation, as, for example, sham fight, but also the strenuous competition and struggle of the search after riches and fortune. In this sense it connects with the battle of life. Hence some attributions say that it is a card of gold, gain, opulence.",
+      "meaning_rev": "Litigation, disputes, trickery, contradiction.",
+      "desc": "A posse of youths, who are brandishing staves, as if in sport or strife. It is mimic warfare, and hereto correspond the"
+    }
+]
+}
