@@ -1,8 +1,8 @@
 # IM2-tarot-movie-night
 
-##Subtitle
+##Mein Portfolio
 
-Paragraph
+Entdecke mein projekte hier:
 
 
 [Mein Portofolio] (https://tooling.mmp.li/)
