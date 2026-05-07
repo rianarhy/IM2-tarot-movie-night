@@ -2,10 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+--hellviolet: #ebd1f6;
+--dunkelviolet: #73407b;
+--weiss: #e9d4d4;   
+
+.title {
+  font-family: "Council OT", serif;
+  color: var(--hellviolet);
+}
+.text {
+  font-family: "Cuprum", sans-serif;
+  color: var(--hellviolet);
+}
 }
 
 
+
 body {
-    background-color: red
+    background-color: rgb(53, 40, 74)
 }
 
