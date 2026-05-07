@@ -1,19 +1,394 @@
 {
-  "movies": [
+  "cards": [
     {
-      "name": "Eight of Wands",
+      "name": "The Fool",
+      "meaning_up": "Folly, mania, extravagance, intoxication, delirium, frenzy, bewrayment.",
+      "#IMDB_ID": "tt0758758"
+    },
+    {
+      "name": "The Magician",
+      "meaning_up": "Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male.",
+      "#IMDB_ID": "tt0482571"
+    },
+    {
+      "name": "The High Priestess",
+      "meaning_up": "Secrets, mystery, the future as yet unrevealed; the woman who interests the Querent, if male; the Querent herself, if female; silence, tenacity; mystery, wisdom, science.",
       "#IMDB_ID": "tt0947798"
     },
     {
+      "name": "The Empress",
+      "meaning_up": "Fruitfulness, action, initiative, length of days; the unknown, clandestine; also difficulty, doubt, ignorance.",
+      "#IMDB_ID": "tt0422720"
+    },
+    {
+      "name": "The Emperor",
+      "meaning_up": "Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will.",
+      "#IMDB_ID": "tt0172495"
+    },
+    {
+      "name": "The Hierophant",
+      "meaning_up": "Marriage, alliance, captivity, servitude; by another account, mercy and goodness; inspiration; the man to whom the Querent has recourse.",
+      "#IMDB_ID": "tt0097165"
+    },
+    {
+      "name": "The Lovers",
+      "meaning_up": "Attraction, love, beauty, trials overcome.",
+      "#IMDB_ID": "tt0112471"
+    },
+    {
+      "name": "The Chariot",
+      "meaning_up": "Succour, providence also war, triumph, presumption, vengeance, trouble.",
+      "#IMDB_ID": "tt1392190"
+    },
+    {
+      "name": "Fortitude",
+      "meaning_up": "Power, energy, action, courage, magnanimity; also complete success and honours.",
+      "#IMDB_ID": "tt0075148"
+    },
+    {
+      "name": "The Hermit",
+      "meaning_up": "Prudence, circumspection; also and especially treason, dissimulation, roguery, corruption.",
+      "#IMDB_ID": "tt7984734"
+    },
+    {
+      "name": "Wheel Of Fortune",
+      "meaning_up": "Destiny, fortune, success, elevation, luck, felicity.",
+      "#IMDB_ID": "tt0120148"
+    },
+    {
+      "name": "Justice",
+      "meaning_up": "Equity, rightness, probity, executive; triumph of the deserving side in law.",
+      "#IMDB_ID": "tt0050083"
+    },
+    {
+      "name": "The Hanged Man",
+      "meaning_up": "Wisdom, circumspection, discernment, trials, sacrifice, intuition, divination, prophecy.",
+      "#IMDB_ID": "tt0133093"
+    },
+    {
+      "name": "Death",
+      "meaning_up": "End, mortality, destruction, corruption also, for a man, the loss of a benefactor for a woman, many contrarieties; for a maid, failure of marriage projects.",
+      "#IMDB_ID": "tt0167404"
+    },
+    {
+      "name": "Temperance",
+      "meaning_up": "Economy, moderation, frugality, management, accommodation.",
+      "#IMDB_ID": "tt0879870"
+    },
+    {
+      "name": "The Devil",
+      "meaning_up": "Ravage, violence, vehemence, extraordinary efforts, force, fatality; that which is predestined but is not for this reason evil.",
+      "#IMDB_ID": "tt0993846"
+    },
+    {
+      "name": "The Tower",
+      "meaning_up": "Misery, distress, indigence, adversity, calamity, disgrace, deception, ruin. It is a card in particular of unforeseen catastrophe.",
+      "#IMDB_ID": "tt1375666"
+    },
+    {
+      "name": "The Star",
+      "meaning_up": "Loss, theft, privation, abandonment; another reading says-hope and bright prospects.",
+      "#IMDB_ID": "tt0111161"
+    },
+    {
+      "name": "The Moon",
+      "meaning_up": "Hidden enemies, danger, calumny, darkness, terror, deception, occult forces, error.",
+      "#IMDB_ID": "tt0246578"
+    },
+    {
+      "name": "The Sun",
+      "meaning_up": "Material happiness, fortunate marriage, contentment.",
+      "#IMDB_ID": "tt0449059"
+    },
+    {
+      "name": "The Last Judgment",
+      "meaning_up": "Change of position, renewal, outcome.",
+      "#IMDB_ID": "tt0816692"
+    },
+    {
+      "name": "The World",
+      "meaning_up": "Assured success, recompense, voyage, route, emigration, flight, change of place.",
+      "#IMDB_ID": "tt0167260"
+    },
+    {
+      "name": "Ace of Cups",
+      "meaning_up": "House of the true heart, joy, content, abode, nourishment, abundance, fertility; Holy Table, felicity hereof.",
+      "#IMDB_ID": "tt1798709"
+    },
+    {
+      "name": "Two of Cups",
+      "meaning_up": "Love, passion, friendship, affinity, union, concord, sympathy, the interrelation of the sexes, and--as a suggestion apart from all offices of divination--that desire which is not in Nature, but by which Nature is sanctified.",
+      "#IMDB_ID": "tt3783958"
+    },
+    {
+      "name": "Three of Cups",
+      "meaning_up": "The conclusion of any matter in plenty, perfection and merriment; happy issue, victory, fulfilment, solace, healing.",
+      "#IMDB_ID": "tt0795421"
+    },
+    {
+      "name": "Four of Cups",
+      "meaning_up": "Weariness, disgust, aversion, imaginary vexations, as if the wine of this world had caused satiety only.",
+      "#IMDB_ID": "tt0335266"
+    },
+    {
+      "name": "Five of Cups",
+      "meaning_up": "A dark, cloaked figure, looking sideways at three prone cups two others stand upright behind him.",
+      "#IMDB_ID": "tt4034228"
+    },
+    {
+      "name": "Six of Cups",
+      "meaning_up": "A card of the past and of memories, looking back, as--for example--on childhood; happiness, enjoyment, but coming rather from the past; things that have vanished.",
+      "#IMDB_ID": "tt0332280"
+    },
+    {
+      "name": "Seven of Cups",
+      "meaning_up": "Fairy favours, images of reflection, sentiment, imagination, things seen in the glass of contemplation.",
+      "#IMDB_ID": "tt1375666"
+    },
+    {
+      "name": "Eight of Cups",
+      "meaning_up": "The card speaks for itself on the surface, but other readings are entirely antithetical--giving joy, mildness, timidity, honour, modesty.",
+      "#IMDB_ID": "tt0758758"
+    },
+    {
+      "name": "Nine of Cups",
+      "meaning_up": "Concord, contentment, physical bien-être; also victory, success, advantage.",
+      "#IMDB_ID": "tt2883512"
+    },
+    {
+      "name": "Ten of Cups",
+      "meaning_up": "Contentment, repose of the entire heart; the perfection of that state; also perfection of human love and friendship.",
+      "#IMDB_ID": "tt0454921"
+    },
+    {
+      "name": "Page of Cups",
+      "meaning_up": "Fair young man, one impelled to render service and with whom the Querent will be connected.",
+      "#IMDB_ID": "tt5726616"
+    },
+    {
+      "name": "Knight of Cups",
+      "meaning_up": "Arrival, approach--sometimes that of a messenger; advances, proposition, demeanour, invitation, incitement.",
+      "#IMDB_ID": "tt0120338"
+    },
+    {
+      "name": "Queen of Cups",
+      "meaning_up": "Good, fair woman; honest, devoted woman, who will do service to the Querent.",
+      "#IMDB_ID": "tt0211915"
+    },
+    {
+      "name": "King of Cups",
+      "meaning_up": "Fair man, man of business, law, or divinity; responsible, disposed to oblige the Querent.",
+      "#IMDB_ID": "tt5580390"
+    },
+    {
+      "name": "Ace of Swords",
+      "meaning_up": "Triumph, the excessive degree in everything, conquest, triumph of force.",
+      "#IMDB_ID": "tt0104257"
+    },
+    {
+      "name": "Two of Swords",
+      "meaning_up": "Conformity and the equipoise which it suggests, courage, friendship, concord in a state of arms.",
+      "#IMDB_ID": "tt1285016"
+    },
+    {
+      "name": "Three of Swords",
+      "meaning_up": "Removal, absence, delay, division, rupture, dispersion.",
+      "#IMDB_ID": "tt1120985"
+    },
+    {
+      "name": "Four of Swords",
+      "meaning_up": "Vigilance, retreat, solitude, hermit's repose, exile, tomb and coffin.",
+      "#IMDB_ID": "tt1798709"
+    },
+    {
+      "name": "Five of Swords",
+      "meaning_up": "Degradation, destruction, revocation, infamy, dishonour, loss.",
+      "#IMDB_ID": "tt2872718"
+    },
+    {
+      "name": "Six of Swords",
+      "meaning_up": "Journey by water, route, way, envoy, commissionary, expedient.",
+      "#IMDB_ID": "tt0454876"
+    },
+    {
+      "name": "Seven of Swords",
+      "meaning_up": "Design, attempt, wish, hope, confidence; also quarrelling.",
+      "#IMDB_ID": "tt0264464"
+    },
+    {
+      "name": "Eight of Swords",
+      "meaning_up": "Bad news, violent chagrin, crisis, censure, power in trammels, conflict.",
+      "#IMDB_ID": "tt0947798"
+    },
+    {
+      "name": "Nine of Swords",
+      "meaning_up": "Death, failure, miscarriage, delay, deception, disappointment, despair.",
+      "#IMDB_ID": "tt0180093"
+    },
+    {
+      "name": "Ten of Swords",
+      "meaning_up": "Pain, affliction, tears, sadness, desolation.",
+      "#IMDB_ID": "tt0114369"
+    },
+    {
+      "name": "Page of Swords",
+      "meaning_up": "Authority, overseeing, secret service, vigilance, spying, examination.",
+      "#IMDB_ID": "tt0241527"
+    },
+    {
+      "name": "Knight of Swords",
+      "meaning_up": "Skill, bravery, capacity, defence, address, enmity, wrath, war.",
+      "#IMDB_ID": "tt0468569"
+    },
+    {
+      "name": "Queen of Swords",
+      "meaning_up": "Widowhood, female sadness and embarrassment, absence, sterility, mourning.",
+      "#IMDB_ID": "tt2267998"
+    },
+    {
+      "name": "King of Swords",
+      "meaning_up": "Power, command, authority, militant intelligence, law.",
+      "#IMDB_ID": "tt0068646"
+    },
+    {
+      "name": "Ace of Wands",
+      "meaning_up": "Creation, invention, enterprise, beginning, source.",
+      "#IMDB_ID": "tt2582802"
+    },
+    {
+      "name": "Two of Wands",
+      "meaning_up": "Riches, fortune, magnificence.",
+      "#IMDB_ID": "tt0359950"
+    },
+    {
+      "name": "Three of Wands",
+      "meaning_up": "Established strength, enterprise, effort, trade, commerce, discovery.",
+      "#IMDB_ID": "tt3659388"
+    },
+    {
+      "name": "Four of Wands",
+      "meaning_up": "Country life, haven of refuge, repose, concord, harmony, prosperity, peace.",
+      "#IMDB_ID": "tt3104988"
+    },
+    {
       "name": "Five of Wands",
-      "name_short": "wa05",
-      "value": "five",
-      "value_int": 5,
-      "suit": "wands",
-      "type": "minor",
-      "meaning_up": "Imitation, as, for example, sham fight, but also the strenuous competition and struggle of the search after riches and fortune. In this sense it connects with the battle of life. Hence some attributions say that it is a card of gold, gain, opulence.",
-      "meaning_rev": "Litigation, disputes, trickery, contradiction.",
-      "desc": "A posse of youths, who are brandishing staves, as if in sport or strife. It is mimic warfare, and hereto correspond the"
+      "meaning_up": "Competition, struggle, search after riches and fortune.",
+      "#IMDB_ID": "tt0137523"
+    },
+    {
+      "name": "Six of Wands",
+      "meaning_up": "Victory, triumph, expectation crowned with desire.",
+      "#IMDB_ID": "tt0079817"
+    },
+    {
+      "name": "Seven of Wands",
+      "meaning_up": "Valour, courage against opposition.",
+      "#IMDB_ID": "tt0416449"
+    },
+    {
+      "name": "Eight of Wands",
+      "meaning_up": "Activity, swiftness, speed, movement, arrows of love.",
+      "#IMDB_ID": "tt3890160"
+    },
+    {
+      "name": "Nine of Wands",
+      "meaning_up": "Strength in opposition.",
+      "#IMDB_ID": "tt1392190"
+    },
+    {
+      "name": "Ten of Wands",
+      "meaning_up": "Oppression, fortune, gain, success, burden.",
+      "#IMDB_ID": "tt7286456"
+    },
+    {
+      "name": "Page of Wands",
+      "meaning_up": "Dark young man, faithful, lover, envoy, postman.",
+      "#IMDB_ID": "tt2250912"
+    },
+    {
+      "name": "Knight of Wands",
+      "meaning_up": "Departure, absence, flight, emigration, change of residence.",
+      "#IMDB_ID": "tt0092099"
+    },
+    {
+      "name": "Queen of Wands",
+      "meaning_up": "Dark woman, friendly, chaste, loving, honourable.",
+      "#IMDB_ID": "tt0195685"
+    },
+    {
+      "name": "King of Wands",
+      "meaning_up": "Dark man, friendly, countryman, honest and conscientious.",
+      "#IMDB_ID": "tt0993846"
+    },
+    {
+      "name": "Ace of Pentacles",
+      "meaning_up": "Perfect contentment, felicity, ecstasy; speedy intelligence; gold.",
+      "#IMDB_ID": "tt4276820"
+    },
+    {
+      "name": "Two of Pentacles",
+      "meaning_up": "Gaiety, recreation, news and messages in writing, obstacles, agitation.",
+      "#IMDB_ID": "tt1135503"
+    },
+    {
+      "name": "Three of Pentacles",
+      "meaning_up": "Métier, trade, skilled labour, nobility, glory.",
+      "#IMDB_ID": "tt1285016"
+    },
+    {
+      "name": "Four of Pentacles",
+      "meaning_up": "Surety of possessions, inheritance, legacy.",
+      "#IMDB_ID": "tt0469494"
+    },
+    {
+      "name": "Five of Pentacles",
+      "meaning_up": "Material trouble, destitution, poverty.",
+      "#IMDB_ID": "tt6751668"
+    },
+    {
+      "name": "Six of Pentacles",
+      "meaning_up": "Presents, gifts, gratification, prosperity.",
+      "#IMDB_ID": "tt0878804"
+    },
+    {
+      "name": "Seven of Pentacles",
+      "meaning_up": "Money, business, barter.",
+      "#IMDB_ID": "tt1210166"
+    },
+    {
+      "name": "Eight of Pentacles",
+      "meaning_up": "Work, employment, craftsmanship, skill in business.",
+      "#IMDB_ID": "tt2361509"
+    },
+    {
+      "name": "Nine of Pentacles",
+      "meaning_up": "Prudence, safety, success, accomplishment, discernment.",
+      "#IMDB_ID": "tt0458352"
+    },
+    {
+      "name": "Ten of Pentacles",
+      "meaning_up": "Gain, riches, family matters, inheritance.",
+      "#IMDB_ID": "tt8946378"
+    },
+    {
+      "name": "Page of Pentacles",
+      "meaning_up": "Application, study, scholarship, reflection.",
+      "#IMDB_ID": "tt0087538"
+    },
+    {
+      "name": "Knight of Pentacles",
+      "meaning_up": "Utility, service, responsibility, rectitude.",
+      "#IMDB_ID": "tt0780504"
+    },
+    {
+      "name": "Queen of Pentacles",
+      "meaning_up": "Opulence, generosity, magnificence, security, liberty.",
+      "#IMDB_ID": "tt1135503"
+    },
+    {
+      "name": "King of Pentacles",
+      "meaning_up": "Business aptitude, realizing intelligence, success.",
+      "#IMDB_ID": "tt0071562"
     }
-]
+  ]
 }
