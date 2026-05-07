@@ -13,6 +13,8 @@ fetch("cards.json")
       const imdbId = card["#IMDB_ID"];
 
       try {
+
+        // IMDB API
         const response = await fetch(
           `https://imdb.iamidiotareyoutoo.com/search?q=${imdbId}`
         );
@@ -25,21 +27,65 @@ fetch("cards.json")
         const actors = movie["#ACTORS"];
         const url = movie["#IMDB_URL"];
 
-        // HTML-Ausgabe
-        output.innerHTML = `
-          <h2 class="title"> ${card.name}</h2>
-          <p class="text">${card.meaning_up}</p>
+        // Bildpfad
+        const imagePath = card.image;
 
-          <hr>
+        // Bild prüfen
+        const img = new Image();
 
-          <h2 class="title">Your Movie</h2>
-          <p class= "title">${title}</p>
-          <p class= "text">${year}, ${actors}</p>
-          <p class= "title" ><a href="${url}" target="_blank">More Info</a></p>
-        `;
+        img.onload = () => {
+
+          // Wenn Bild existiert
+          output.innerHTML = `
+            <img src="${imagePath}" alt="${card.name}" class="card-image">
+
+            <h2 class="title">${card.name}</h2>
+            <p class="text">${card.meaning_up}</p>
+
+            <hr>
+
+            <h2 class="title">Your Movie</h2>
+            <p class="title">${title}</p>
+            <p class="text">${year}, ${actors}</p>
+
+            <p class="title">
+              <a href="${url}" target="_blank">More Info</a>
+            </p>
+          `;
+        };
+
+        img.onerror = () => {
+
+          // Falls Bild fehlt
+          console.log("no image yet");
+
+          output.innerHTML = `
+            <h2 class="title">${card.name}</h2>
+            <p class="text">${card.meaning_up}</p>
+
+            <p class="text"> no image yet</p>
+
+            <hr>
+
+            <h2 class="title">Your Movie</h2>
+            <p class="title">${title}</p>
+            <p class="text">${year}, ${actors}</p>
+
+            <p class="title">
+              <a href="${url}" target="_blank">More Info</a>
+            </p>
+          `;
+        };
+
+        // Bild laden starten
+        img.src = imagePath;
 
       } catch (error) {
-        output.innerHTML = "<p>Fehler beim Laden der Filmdaten.</p>";
+
+        output.innerHTML = `
+          <p class="text">Fehler beim Laden der Filmdaten.</p>
+        `;
+
         console.error(error);
       }
 
