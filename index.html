@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let the Tarot Card decide your movie</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/efc6evl.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.typekit.net/exs7pup.css"> <!-- font -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script> <!-- lottie -->
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -14,7 +17,15 @@
 
     </header>
     <main>
-        <button id="ClickMeButton">Click me</button>
+        <div class="kugel-wrapper">
+            <img class="kugel" src="images/icons/Kugel.png" alt="Glaskugel fehlt">
+            <dotlottie-wc src="https://lottie.host/e10af88e-067f-48b1-9bc1-e3a6e2765280/XnOb2AWy5a.lottie" style="width: 300px;height: 300px"
+            background="transparent"
+            autoplay
+            loop
+            ></dotlottie-wc>
+            <button id="ClickMeButton">Click me</button>
+        </div>
         <div id="output"></div>
 
 
