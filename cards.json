@@ -171,13 +171,13 @@
     {
       "name": "Seven of Cups",
       "meaning_up": "Choices, illusion.",
-      "#IMDB_ID": "tt1375666",
+      "#IMDB_ID": "tt0166924",
       "image": "images/seven_of_cups.png"
     },
     {
       "name": "Eight of Cups",
       "meaning_up": "Walking away, search.",
-      "#IMDB_ID": "tt0758758",
+      "#IMDB_ID": "tt9770150",
       "image": "images/eight_of_cups.png"
     },
     {
@@ -237,7 +237,7 @@
     {
       "name": "Four of Swords",
       "meaning_up": "Rest, recovery.",
-      "#IMDB_ID": "tt1798709",
+      "#IMDB_ID": "tt5247022",
       "image": "images/four_of_swords.png"
     },
     {
@@ -261,7 +261,7 @@
     {
       "name": "Eight of Swords",
       "meaning_up": "Restriction, fear.",
-      "#IMDB_ID": "tt0947798",
+      "#IMDB_ID": "tt1130884",
       "image": "images/eight_of_swords.png"
     },
     {
@@ -351,7 +351,7 @@
     {
       "name": "Nine of Wands",
       "meaning_up": "Resilience, persistence.",
-      "#IMDB_ID": "tt1392190",
+      "#IMDB_ID": "tt0206634",
       "image": "images/nine_of_wands.png"
     },
     {
@@ -381,7 +381,7 @@
     {
       "name": "King of Wands",
       "meaning_up": "Leadership, vision.",
-      "#IMDB_ID": "tt0993846",
+      "#IMDB_ID": "tt0033467",
       "image": "images/king_of_wands.png"
     },
     {
@@ -399,7 +399,7 @@
     {
       "name": "Three of Pentacles",
       "meaning_up": "Teamwork, skill.",
-      "#IMDB_ID": "tt1285016",
+      "#IMDB_ID": "tt1895587",
       "image": "images/three_of_pentacles.png"
     },
     {
@@ -459,7 +459,7 @@
     {
       "name": "Queen of Pentacles",
       "meaning_up": "Security, nurturing.",
-      "#IMDB_ID": "tt1135503",
+      "#IMDB_ID": "tt0241303",
       "image": "images/queen_of_pentacles.png"
     },
     {
