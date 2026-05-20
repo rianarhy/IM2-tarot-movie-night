@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="https://use.typekit.net/efc6evl.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/exs7pup.css"> <!-- font -->
-    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script> <!-- lottie -->
+   <!--  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script> --> <!-- lottie Augen-->
+
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script> <!-- lottie Kugel und Augen -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script> <!-- lottie bg -->
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+   <!--  <dotlottie-wc class="lottie-bg" src="https://lottie.host/ac2ce0c5-51c8-42ff-842b-72ed4c2ef64b/Qrt1jIX4Q3.lottie" autoplay loop></dotlottie-wc>
+ -->
+
+   <!--  <div id="lottie-bg" aria-hidden="true">
+<dotlottie-wc id="lottie-bg-canvas" src="https://lottie.host/ac2ce0c5-51c8-42ff-842b-72ed4c2ef64b/Qrt1jIX4Q3.lottie" autoplay loop></dotlottie-wc>
+    </div> -->
+
     <header>
         <h1 class="title">Let the Tarot Card decide your movie</h1>
 
     </header>
-    <main>
+    <main class="site-content">
         <div class="kugel-wrapper">
-            <img class="kugel" src="images/icons/Kugel.png" alt="Glaskugel fehlt">
-            <dotlottie-wc src="https://lottie.host/e10af88e-067f-48b1-9bc1-e3a6e2765280/XnOb2AWy5a.lottie" style="width: 300px;height: 300px"
-            background="transparent"
-            autoplay
-            loop
-            ></dotlottie-wc>
-            <button id="ClickMeButton">Click me</button>
+            <!-- <img class="kugel" src="images/icons/Kugel.png" alt="Glaskugel fehlt"> -->
+            <dotlottie-wc class="lottie-kugel-auge" src="https://lottie.host/32b585ef-91e2-41a0-95b6-3db4d77de155/K4oe6JiVLr.lottie" autoplay loop></dotlottie-wc>
+            <!-- <dotlottie-wc class="lottie-augen" src="https://lottie.host/3607b65e-7e7f-4943-9a9a-4af74e0544f2/PadPv85neI.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc> -->
+            <button id="ClickMeButton">Click me!</button>
         </div>
         <div id="output"></div>
 
@@ -34,6 +41,7 @@
 
     </footer>
     <script src="js/script.js" type="module"></script>
+    <script src="js/lottie.js"></script>
 </body>
 </html>
 

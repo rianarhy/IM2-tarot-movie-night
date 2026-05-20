@@ -14,6 +14,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+.lottie-bg {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
  
 
 .title {
@@ -33,39 +54,63 @@
 
 .kugel-wrapper {
     position: relative;
-    margin: 1rem;
+    width: 40rem;
+    max-width: 90vw;
+    aspect-ratio: 1 / 1;
+    margin: 1rem auto;
 }
 
-.kugel {
-  width: 150vh;
-}
 
-.lottie {
+.lottie-kugel-auge {
     position: absolute;
-    background: transparent;
+    pointer-events: none;
 
-    width: 180px;
-    height: 180px;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
+    inset: 0;
+    width: 100%;
+    height: 100%;
 
     z-index: 1;
 }
 
 #ClickMeButton {
     position: absolute;
-    top: 10%;
-    left: 50%;
+     z-index: 2;
+    top: 33%;
+    left: 59%;
     transform: translate(-50%, -50%);
+    font-family: "council", serif;
+    font-size: 4rem;
+    color: var(--weiss);
+    letter-spacing: 0.18rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#ClickMeButton:hover {
+    transform: scale(1.1);
 }
 
 
 
+
 body {
-    background-color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    /* background-color: var(--background); */
+     background-image: url("/images/icons/bg-stars-zwei.jpg");
+     background-size: cover;
+
+   /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-height: 100vh;
+
+    overflow-x: hidden; */
 
     /* min-height: 100vh; */
 

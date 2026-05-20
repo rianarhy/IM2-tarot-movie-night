@@ -92,3 +92,7 @@ fetch("cards.json")
     });
 
   });
+
+
+
+
