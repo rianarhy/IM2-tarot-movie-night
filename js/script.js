@@ -37,20 +37,25 @@ fetch("cards.json")
 
           // Wenn Bild existiert
           output.innerHTML = `
-            <img src="${imagePath}" alt="${card.name}" class="card-image">
+            <div>
+              <img src="${imagePath}" alt="${card.name}" class="card-image">
+            </div>
 
-            <h2 class="title">${card.name}</h2>
-            <p class="text">${card.meaning_up}</p>
+            <div class="card-info">
+              <h2 class="title">${card.name}</h2>
+              <p class="text">${card.meaning_up}</p>
+            
 
-            <hr>
+              <hr>
 
-            <h2 class="title">Your Movie</h2>
-            <p class="title">${title}</p>
-            <p class="text">${year}, ${actors}</p>
+              <h2 class="title">Your Movie:</h2>
+              <p class="title">${title}</p>
+              <p class="text">${year}, ${actors}</p>
 
-            <p class="title">
-              <a href="${url}" target="_blank">More Info</a>
-            </p>
+              <p>
+                <a class="imdb-button" href="${url}" target="_blank">More Info</a>
+              </p>
+            </div>
           `;
         };
 
@@ -71,8 +76,8 @@ fetch("cards.json")
             <p class="title">${title}</p>
             <p class="text">${year}, ${actors}</p>
 
-            <p class="title">
-              <a href="${url}" target="_blank">More Info</a>
+            <p>
+              <a class="imdb-button" href="${url}" target="_blank">More Info</a>
             </p>
           `;
         };
