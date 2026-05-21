@@ -31,7 +31,7 @@ html {
 
     background-size: cover;
 
-    z-index: -1;
+    z-index: -2;
     pointer-events: none;
 }
 
@@ -60,6 +60,7 @@ html {
     max-width: 90vw;
     aspect-ratio: 1 / 1;
     margin: 1rem auto;
+    transform: translateX(-50px);
 }
 
 
@@ -225,7 +226,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-.bg-filmstrip {
+/* .bg-filmstrip {
     position: fixed;
     inset: 0;
 
@@ -245,4 +246,51 @@ footer {
     opacity: 1;
 
     object-fit: cover;
+} */
+
+
+.filmstrip-bg {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: -1;
+
+    pointer-events: none;
+    opacity: 0.2;
 }
+
+.filmstrip-track {
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 200%;
+
+    animation: /* film-roll 10s linear infinite;  */ none;
+
+    will-change: transform;
+}
+
+.filmstrip-track img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+/* @keyframes film-roll {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+
+} */
