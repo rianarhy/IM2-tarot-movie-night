@@ -3,7 +3,12 @@
     --hellviolet: #ebd1f6;
     --dunkelviolet: #73407b;
     --weiss: #E9D4D4;
+    --font-size-title-header: 5.5rem;
     --font-size-title: 5rem;
+    --font-size-movie-title-card: 2.5rem;
+    --font-size-text: 1.2rem;
+    
+
 
     --background: rgb(53, 40, 74);
 }
@@ -35,7 +40,15 @@ html {
     pointer-events: none;
 }
 
- 
+.title-header {
+    text-align: center;
+    font-family: "council", serif;
+    font-size: var(--font-size-title-header);
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--weiss);
+    margin-top: 2rem;
+}
 
 .title {
   font-family: "council", serif;
@@ -43,12 +56,21 @@ html {
   /* letter-spacing: 0.3rem; */
   font-weight: 400;
   color: var(--weiss);
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+}
+
+.movie-title-card {
+    font-family: Cuprum, sans-serif;
+    font-size: var(--font-size-movie-title-card);
+    color: var(--weiss);
+    margin-top: 3rem;
+
 }
   
 
 .text {
   font-family: "Cuprum", sans-serif;
+  font-size: var(--font-size-text);
   font-weight: bold;
   letter-spacing: 0.15rem;
   color: var(--weiss);
@@ -97,9 +119,13 @@ html {
     transform: scale(1.3);
 }
 
+
 #output {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 4rem;
 }
 
 .card-image {
@@ -112,6 +138,7 @@ html {
 
 .card-info {
     margin-left: 5rem;
+    max-width: 30rem;
 }
 
 
@@ -162,28 +189,6 @@ html {
 }
 
 
-
-
-
-/* .home-page {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0; */
-    /* background-color: var(--background); */
-    /* background-image: url("/images/icons/bg-stars-zwei.jpg");
-    background-size: cover; */
-
-
-
-/* Impressum Seite */
-
-/* .impressum-page {
-    background-image: url("/images/icons/bg-stars-zwei.jpg");
-    background-size: cover;
-}
- */
-
-
 .impressum-text {
     padding: 3rem;
     position: relative;
@@ -211,9 +216,6 @@ html {
     align-items: center;
     background-image: url("/images/icons/bg-stars-zwei.jpg");
     background-size: cover;
-    /* width: 100%; */
-    /* min-height: 100vh; */
-    /* margin: 0; */
 }
 
 .home-page main,
@@ -226,28 +228,6 @@ footer {
     margin-bottom: 2rem;
 }
 
-/* .bg-filmstrip {
-    position: fixed;
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: 2;
-
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.bg-filmstrip dotlottie-wc {
-    width: 100%;
-    height: 100%;
-
-    opacity: 1;
-
-    object-fit: cover;
-} */
-
 
 .filmstrip-bg {
     position: fixed;
@@ -258,7 +238,7 @@ footer {
     z-index: -1;
 
     pointer-events: none;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .filmstrip-track {
@@ -283,14 +263,144 @@ footer {
     flex-shrink: 0;
 }
 
-/* @keyframes film-roll {
 
-    from {
-        transform: translateY(0);
+
+/* =========================
+   RESPONSIVE VERSIONEN
+   ========================= */
+
+
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-title: 4rem;
+        --font-size-movie-title-card: 1.8rem;
+        --font-size-text: 1rem;
+        --font-size-title-header: 4rem;
     }
 
-    to {
-        transform: translateY(-50%);
+    .kugel-wrapper {
+        width: 25rem;
+        transform: translateX(-25px);
     }
 
-} */
+    #ClickMeButton {
+        font-size: 2.5rem;
+        top: 27%;
+        left: 45%;
+    }
+
+    #output {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .card-image {
+        width: 16rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-info {
+        margin-left: 2rem;
+    }
+
+    .filmstrip-track img {
+        content: url("/images/icons/filmstrip-tablet_updated.svg");
+    }
+}
+
+
+@media (max-width: 800px) {
+    :root {
+        --font-size-title-header: 3rem;
+    }
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    :root {
+        --font-size-title: 3rem;
+        --font-size-movie-title-card: 1.3rem;
+        --font-size-text: 0.8srem;
+        --font-size-title-header: 2rem;
+    }
+
+    .title-header {
+        max-width: 17rem;
+    }
+
+    .title {
+        text-align: center;
+        /* margin-top: 1.5rem; */
+    }
+
+
+    .text {
+        text-align: center;
+        letter-spacing: 0.08rem;
+        padding: 0 1rem;
+    }
+
+    .kugel-wrapper {
+        width: 20rem;
+        transform: none;
+        margin-top: 2rem;
+        transform: translateX(-25px);
+    }
+
+    #ClickMeButton {
+        font-size: 2rem;
+        top: 27%;
+        left: 44%;
+    }
+
+    #ClickMeButton:hover {
+        transform: scale(1.15);
+    }
+
+    #output {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card-image {
+        width: 80%;
+        max-width: 16rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-info {
+        margin-left: 0;
+    }
+
+    .imdb-button {
+        font-size: 1.4rem;
+        padding: 0.5rem 1.8rem;
+    }
+
+    .impressum-text {
+        padding: 2rem 1rem;
+    }
+
+    .impressum-page h1,
+    .impressum-page h2 {
+        font-size: 2.3rem;
+    }
+
+    footer {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .filmstrip-track img {
+        content: url("/images/icons/filmstrip-mobile_updated.svg");
+    }
+}
+}
