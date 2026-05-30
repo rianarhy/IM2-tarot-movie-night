@@ -37,25 +37,26 @@ fetch("cards.json")
 
           // Wenn Bild existiert
           output.innerHTML = `
-            <div>
-              <img src="${imagePath}" alt="${card.name}" class="card-image">
-            </div>
+              <div>
+                <img src="${imagePath}" alt="${card.name}" class="card-image">
+              </div>
 
-            <div class="card-info">
-              <h2 class="title">${card.name}</h2>
-              <p class="text">${card.meaning_up}</p>
-            
-
+              <div class="card-info">
+                <h2 class="movie-title-card">Your Card:</h2>
+                <h2 class="title">${card.name}</h2>
+                <p class="text">${card.meaning_up}</p>
               
 
-              <h2 class="title">Your Movie:</h2>
-              <p class="title">${title}</p>
-              <p class="text">${year}, ${actors}</p>
+                
 
-              <p>
-                <a class="imdb-button" href="${url}" target="_blank">More Info</a>
-              </p>
-            </div>
+                <h2 class="movie-title-card">Your Movie:</h2>
+                <p class="title">${title}</p>
+                <p class="text">${year}, ${actors}</p>
+
+                <p>
+                  <a class="imdb-button" href="${url}" target="_blank">More Info</a>
+                </p>
+              </div>
           `;
 
            // SCROLL ZUR KARTE HINZUFÜGEN
@@ -79,20 +80,26 @@ fetch("cards.json")
           console.log("no image yet");
 
           output.innerHTML = `
-            <h2 class="title">${card.name}</h2>
-            <p class="text">${card.meaning_up}</p>
+            <div>
+                <img src="${imagePath}" alt="${card.name}" class="card-image">
+              </div>
 
-            <p class="text"> no image yet</p>
+              <div class="card-info">
+                <h2 class="movie-title-card">Your Card:</h2>
+                <h2 class="title">${card.name}</h2>
+                <p class="text">${card.meaning_up}</p>
+              
 
-            
+                
 
-            <h2 class="title">Your Movie</h2>
-            <p class="title">${title}</p>
-            <p class="text">${year}, ${actors}</p>
+                <h2 class="movie-title-card">Your Movie:</h2>
+                <p class="title">${title}</p>
+                <p class="text">${year}, ${actors}</p>
 
-            <p>
-              <a class="imdb-button" href="${url}" target="_blank">More Info</a>
-            </p>
+                <p>
+                  <a class="imdb-button" href="${url}" target="_blank">More Info</a>
+                </p>
+              </div>
           `;
            // SCROLL ZUR KARTE HINZUFÜGEN
             requestAnimationFrame(() => {
@@ -132,7 +139,7 @@ let latestScrollY = window.scrollY;
 let ticking = false;
 
 function updateFilmstrip() {
-    const speed = 0.6; // kleiner = langsamer, grösser = schneller
+    const speed = 2; // kleiner = langsamer, grösser = schneller
     const loopHeight = firstFilmstrip.offsetHeight;
 
     const moveY = (latestScrollY * speed) % loopHeight;
@@ -155,31 +162,13 @@ window.addEventListener("resize", updateFilmstrip);
 window.addEventListener("load", updateFilmstrip);
 
 
-/* scroll into view */
-
-/* const clickButton =
-    document.getElementById("ClickMeButton");
-
-clickButton.addEventListener("click", () => {
-
-    const kartenSection =
-        document.getElementById("karten-section");
-
-    const y =
-        kartenSection.getBoundingClientRect().top
-        + window.pageYOffset;
-
-    const offset = 120;
-
-    window.scrollTo({
-        top: y - offset,
-        behavior: "smooth"
-    });
-
-}); */
 
 
-function smoothScrollTo(targetY, duration = 1800) {
+
+
+
+/* scroll into view  */
+function smoothScrollTo(targetY, duration = 500) {
 
   const startY = window.scrollY;
 
