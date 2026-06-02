@@ -49,10 +49,10 @@
       "image": "images/the_chariot.png"
     },
     {
-      "name": "Fortitude",
+      "name": "Strength",
       "meaning_up": "Power, energy, courage, magnanimity.",
       "#IMDB_ID": "tt0075148",
-      "image": "images/fortitude.png"
+      "image": "images/Strength.png"
     },
     {
       "name": "The Hermit",
@@ -70,7 +70,7 @@
       "name": "justice",
       "meaning_up": "Equity, rightness, probity.",
       "#IMDB_ID": "tt0050083",
-      "image": "images/justice.png"
+      "image": "images/Justice.png"
     },
     {
       "name": "The Hanged Man",
